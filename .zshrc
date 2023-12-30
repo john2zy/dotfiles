@@ -90,7 +90,6 @@ source $ZSH/oh-my-zsh.sh
 ################################
 
 # My Envrionments
-export VIMINIT="source ~/.vim/.vimrc"
 export GRAPHVIZ_DOT="$(brew --prefix graphviz)/bin/dot"
 
 # Openjdk takes precedence before /usr/bin
@@ -123,17 +122,11 @@ export PATH="$HOME/go/bin:$PATH"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias muR="mutagen sync resume repo"
-alias muP="mutagen sync pause repo"
 alias setproxy="export https_proxy=http://127.0.0.1:10901 http_proxy=http://127.0.0.1:10901 all_proxy=socks5://127.0.0.1:10901"
 alias unsetproxy="unset https_proxy;unset http_proxy;unset all_proxy"
-
-# CLI tools improvements
+alias vim="nvim"
 alias ls="eza -g"
 alias cat="bat"
-alias redisviewer="$HOME/go/bin/redis-viewer -c $HOME/.config/redis-viewer/redis-viewer.yaml"
 
 ################################
 # Tools setup
