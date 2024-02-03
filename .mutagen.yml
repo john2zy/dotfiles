@@ -1,0 +1,13 @@
+sync:
+  defaults:
+    mode: "two-way-resolved"
+    ignore:
+      paths:
+        - "bin"
+        - "log"
+        - "tool"
+        - ".DS_Store"
+        - ".idea"
+        - ".tox"
+        - ".venv"
+      vcs: true

@@ -77,7 +77,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd golang poetry)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd poetry aliases tmux git urltools)
 
 # Homebrew completion
 # This needs to be set before sourcing oh-my-zsh.sh
@@ -100,6 +100,9 @@ export PATH="/Users/johnzeng/Library/Python/3.9/bin:$PATH"
 
 # Go installs
 export PATH="$HOME/go/bin:$PATH"
+
+# Cargo installs
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

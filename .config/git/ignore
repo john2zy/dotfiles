@@ -1,11 +1,13 @@
 #### Miscellaneous Tools ####
 .idea
 .gitlab-ci-local
+log
 
 #### Golang ####
 
 # Go workspace file
 go.work
+go.work.sum
 
 coverprofile.out
 
