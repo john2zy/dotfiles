@@ -1,0 +1,20 @@
+[core]
+	autocrlf = input
+[user]
+	name = John Zeng 
+	email = johnzengzy@outlook.com
+	signingKey = F1D06A06 
+[commit]
+	gpgsign = true
+[rerere]
+  enabled = true
+[fetch]
+	writeCommitGraph = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[includeIf "gitdir:~/Desktop/src/"]
+  path = ~/src/.gitconfig
