@@ -103,6 +103,7 @@
     #timewarrior             # timewarrior tracking status (https://timewarrior.net/)
     #taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     time                    # current time
+    battery_charge_limit
     os_icon
     # =========================[ Line #2 ]=========================
     newline
