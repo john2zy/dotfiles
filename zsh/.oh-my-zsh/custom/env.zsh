@@ -6,7 +6,7 @@ export FTRACE_UDP_AGENT_HOST=172.24.31.35:5831
 export CONSUL_AGENT_ADDRESS=10.10.160.226:8500
 export FMONITOR_AGENT_HOST=10.1.147.25:8092
 
-export GOPROXY=https://goproxy.cn
+export GOPROXY=https://goproxy.io,direct
 
 export GPG_TTY=$(tty)
 

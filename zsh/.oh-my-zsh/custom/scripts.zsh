@@ -12,6 +12,10 @@ mutagen-sync-src () {
   mutagen sync create ~/Desktop/src/$1 dev:~/src/$1
 }
 
+mutagen-list () {
+  mutagen sync list
+}
+
 mutagen-kill-all () {
   mutagen sync terminate --all
 }
