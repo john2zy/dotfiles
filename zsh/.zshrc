@@ -77,7 +77,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd poetry aliases tmux git urltools)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd poetry aliases tmux git urltools chruby)
 
 # Homebrew completion
 # This needs to be set before sourcing oh-my-zsh.sh
@@ -134,6 +134,8 @@ alias cat="bat"
 ################################
 # Tools setup
 ################################
+
+autoload zmv
 
 # the fuck setup
 eval $(thefuck --alias)

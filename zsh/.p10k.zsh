@@ -66,6 +66,7 @@
     # laravel_version       # laravel php framework version (https://laravel.com/)
     # java_version          # java version (https://www.java.com/)
     # package               # name@version from package.json (https://docs.npmjs.com/files/package.json)
+    chruby
     rbenv                   # ruby version from rbenv (https://github.com/rbenv/rbenv)
     rvm                     # ruby version from rvm (https://rvm.io)
     fvm                     # flutter version management (https://github.com/leoafarias/fvm)
@@ -99,9 +100,9 @@
     # disk_usage            # disk usage
     # ram                   # free RAM
     # swap                  # used swap
-    #todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    #timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    #taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
+    # todo                  # todo items (https://github.com/todotxt/todo.txt-cli)
+    # timewarrior           # timewarrior tracking status (https://timewarrior.net/)
+    # taskwarrior           # taskwarrior task count (https://taskwarrior.org/)
     time                    # current time
     battery_charge_limit
     os_icon
