@@ -1,3 +1,6 @@
+# DOT for jetbrains IDE graphs and plantuml
+export GRAPHVIZ_DOT="$(brew --prefix graphviz)/bin/dot"
+
 # FUTU
 export HOST_NETWORK_ENVIRONMENT=DEV
 export CMLB_PROXY_URL=http://172.24.21.29:7777

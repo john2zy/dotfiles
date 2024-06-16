@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -15,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -33,7 +26,7 @@ HYPHEN_INSENSITIVE="true"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 zstyle ':omz:update' frequency 7
@@ -89,21 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 ################################
 
-# My Envrionments
-export GRAPHVIZ_DOT="$(brew --prefix graphviz)/bin/dot"
-
-# Openjdk takes precedence before /usr/bin
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-# Poetry python package manager
-export PATH="/Users/johnzeng/Library/Python/3.9/bin:$PATH"
-
-# Go installs
-export PATH="$HOME/go/bin:$PATH"
-
-# Cargo installs
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -123,26 +101,13 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias setproxy="export https_proxy=http://127.0.0.1:10901 http_proxy=http://127.0.0.1:10901 all_proxy=socks5://127.0.0.1:10901"
-alias unsetproxy="unset https_proxy;unset http_proxy;unset all_proxy"
-alias vim="nvim"
-alias ls="eza -g"
-alias cat="bat"
 
 ################################
-# Tools setup
+# Other tools setup
 ################################
-
-autoload zmv
 
 # the fuck setup
 eval $(thefuck --alias)
 
 # fzf shell extension setup, completion, CTRL+R etc.
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
