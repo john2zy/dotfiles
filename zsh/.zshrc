@@ -70,7 +70,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd poetry aliases tmux git urltools chruby)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-interactive-cd poetry aliases tmux urltools chruby)
 
 # Homebrew completion
 # This needs to be set before sourcing oh-my-zsh.sh
@@ -105,6 +105,11 @@ source $ZSH/oh-my-zsh.sh
 ################################
 # Other tools setup
 ################################
+
+# oh-my-posh prompts
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config $HOME/.oh-my-posh/custom-catppuccin.omp.json)"
+fi
 
 # the fuck setup
 eval $(thefuck --alias)

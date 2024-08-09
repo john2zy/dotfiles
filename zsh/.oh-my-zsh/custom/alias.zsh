@@ -3,3 +3,4 @@ alias unsetproxy="unset https_proxy;unset http_proxy;unset all_proxy"
 alias vim="nvim"
 alias ls="eza -g"
 alias cat="bat"
+alias omp='oh-my-posh'
